@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+  <title>Tour</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <style>
+    #panorama {
+      width: 450px;
+      height: 300px;
+    }
+  </style>
+
+  <audio id="player" autoplay>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+</head>
+
+<body>
+
+  <div id="panorama"></div>
+
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=0"
-    />
-    <title>Tour</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"
-    ></script>
-    <style>
-      #panorama {
-        width: 450px;
-        height: 300px;
-      }
-    </style>
-  </head>
 
-  <body>
-    
-    <div id="panorama"></div>
-    <div style="display:none;"><canvas id="test"></canvas></div>
-
+    </div>
     <script>
-      
-      function checkTextureSize() {
-        var canvas = document.getElementById("test");
-        var gl = canvas.getContext("experimental-webgl");
-        return gl.getParameter(gl.MAX_TEXTURE_SIZE);
-      }
-      textureSize = checkTextureSize();
-      panorama = "large.jpg";
-      if (textureSize <= 8192) panorama = "medium.jpg";
-      if (textureSize <= 4096) panorama = "small.jpg";
-
       pannellum.viewer("panorama", {
         default: {
           firstScene: "circle",
@@ -49,9 +37,8 @@
           compass: true,
           northOffset: 247.5,
           hotSpotDebug: false,
-         
         },
-        
+
         scenes: {
           circle: {
             title: "Mason Circle",
@@ -62,7 +49,7 @@
             panorama:
               "https://i.ibb.co/b1Rpc4J/anime-art-style-desert-orc-city-1.jpg",
             hotSpots: [
-            {
+              {
                 pitch: -5,
                 yaw: 74,
                 type: "scene",
@@ -124,7 +111,6 @@
               },
             ],
           },
-
           house2: {
             title: "Duven Port",
             hfov: 110,
@@ -160,11 +146,31 @@
                 sceneId: "circle",
                 targetYaw: -23,
                 targetPitch: 2,
+                onmouseenter
               },
             ],
           },
         },
       });
+
+
+      var x = document.getElementById("player");
+
+      function playAudio() {
+        x.play();
+      }
+
+      function pauseAudio() {
+        x.pause();
+      }
+
+      onmousedown = (event) => { playAudio(x) };
+
+
     </script>
-  </body>
+
+
+
+</body>
+
 </html>

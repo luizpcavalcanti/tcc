@@ -1,139 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tour</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"
-    ></script>
-    <style>
-      #panorama {
-        width: 450px;
-        height: 300px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="panorama"></div>
 
-    <script>
-      pannellum.viewer("panorama", {
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tour</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+  <style>
+    #panorama {
+      width: 450px;
+      height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="panorama"></div>
+
+  <script>
+    pannellum.viewer("panorama", {
+
+      default: {
+        firstScene: "circle",
+        author: "Matthew Petroff",
+        sceneFadeDuration: 1300,
+        "autoRotate": -4,
+
+      },
+      "autoLoad": true,
+      "compass": true,
+      "northOffset": 247.5,
         
-        default: {
-          firstScene: "circle",
-          author: "Matthew Petroff",
-          sceneFadeDuration: 1300,
-          "autoRotate": -4,
-          
-        },
-        "autoLoad": true,
         scenes: {
-          circle: {
-            title: "Mason Circle",
-            hfov: 120,
-            pitch: -3,
-            yaw: 117,
-            type: "equirectangular",
-            panorama:
-              "https://i.ibb.co/b1Rpc4J/anime-art-style-desert-orc-city-1.jpg",
-            hotSpots: [
-              {
-                pitch: -2.1,
-                yaw: 132.9,
-                type: "scene",
-                text: "Spring House or Dairy",
-                sceneId: "house",
-              },
-            ],
-          },
-
-          house: {
-            title: "Spring House or Dairy",
-            hfov: 120,
-            yaw: 5,
-            type: "equirectangular",
-            panorama:
-              "https://i.ibb.co/QdSL1sT/anime-art-style-desert-savana-silver-beast.jpg",
-            hotSpots: [
-              {
-                pitch: -0.6,
-                yaw: 37.1,
-                type: "scene",
-                text: "Mason Circle",
-                sceneId: "house1",
-                targetYaw: -23,
-                targetPitch: 2,
-              },
-            ],
-          },
-
-          house1: {
-            title: " House or Dairy",
-            hfov: 120,
-            yaw: 5,
-            type: "equirectangular",
-            panorama:
-              "https://i.ibb.co/YN9MPs5/anime-art-style-dark-elves.jpg",
-            hotSpots: [
-              {
-                pitch: -0.6,
-                yaw: 37.1,
-                type: "scene",
-                text: "Duven Port",
-                sceneId: "house2",
-                targetYaw: -23,
-                targetPitch: 2,
-              },
-            ],
-          },
-
-          house2: {
-            title: "Duven Port",
-            hfov: 110,
-            yaw: 5,
-            type: "equirectangular",
-            panorama: "https://i.ibb.co/ZhkXW1V/anime-art-style-beast-3.jpg",
-            hotSpots: [
-              {
-                pitch: -0.6,
-                yaw: 37.1,
-                type: "scene",
-                text: "Hill of Dawn",
-                sceneId: "house3",
-                targetYaw: -23,
-                targetPitch: 2,
-              },
-            ],
-          },
-
-          house3: {
-            title: " Hill of Dawn",
-            hfov: 110,
-            yaw: 5,
-            type: "equirectangular",
-            panorama:
-              "https://i.ibb.co/jgWswGz/anime-art-style-battle-of-the-dark-elves.jpg",
-            hotSpots: [
-              {
-                pitch: -0.6,
-                yaw: 37.1,
-                type: "scene",
-                text: "Mason Circle",
-                sceneId: "circle",
-                targetYaw: -23,
-                targetPitch: 2,
-              },
-            ],
-          },
+        circle: {
+          title: "Mason Circle",
+          hfov: 120,
+          pitch: -3,
+          yaw: 117,
+          type: "equirectangular",
+          panorama:
+            "https://i.ibb.co/b1Rpc4J/anime-art-style-desert-orc-city-1.jpg",
+          hotSpots: [
+            {
+              pitch: -2.1,
+              yaw: 132.9,
+              type: "scene",
+              text: "Spring House or Dairy",
+              sceneId: "house",
+            },
+          ],
         },
-      });
-      
-    </script>
-  </body>
+
+        house: {
+          title: "Spring House or Dairy",
+          hfov: 120,
+          yaw: 5,
+          type: "equirectangular",
+          panorama:
+            "https://i.ibb.co/QdSL1sT/anime-art-style-desert-savana-silver-beast.jpg",
+          hotSpots: [
+            {
+              pitch: -0.6,
+              yaw: 37.1,
+              type: "scene",
+              text: "Mason Circle",
+              sceneId: "house1",
+              targetYaw: -23,
+              targetPitch: 2,
+            },
+          ],
+        },
+
+        house1: {
+          title: " House or Dairy",
+          hfov: 120,
+          yaw: 5,
+          type: "equirectangular",
+          panorama:
+            "https://i.ibb.co/YN9MPs5/anime-art-style-dark-elves.jpg",
+          hotSpots: [
+            {
+              pitch: -0.6,
+              yaw: 37.1,
+              type: "scene",
+              text: "Duven Port",
+              sceneId: "house2",
+              targetYaw: -23,
+              targetPitch: 2,
+            },
+          ],
+        },
+
+        house2: {
+          title: "Duven Port",
+          hfov: 110,
+          yaw: 5,
+          type: "equirectangular",
+          panorama: "https://i.ibb.co/ZhkXW1V/anime-art-style-beast-3.jpg",
+          hotSpots: [
+            {
+              pitch: -0.6,
+              yaw: 37.1,
+              type: "scene",
+              text: "Hill of Dawn",
+              sceneId: "house3",
+              targetYaw: -23,
+              targetPitch: 2,
+            },
+          ],
+        },
+
+        house3: {
+          title: " Hill of Dawn",
+          hfov: 110,
+          yaw: 5,
+          type: "equirectangular",
+          panorama:
+            "https://i.ibb.co/jgWswGz/anime-art-style-battle-of-the-dark-elves.jpg",
+          hotSpots: [
+            {
+              pitch: -0.6,
+              yaw: 37.1,
+              type: "scene",
+              text: "Mason Circle",
+              sceneId: "circle",
+              targetYaw: -23,
+              targetPitch: 2,
+            },
+          ],
+        },
+      },
+    });
+
+  </script>
+</body>
+
 </html>

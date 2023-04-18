@@ -24,11 +24,12 @@
   </head>
 
   <body>
+    
     <div id="panorama"></div>
     <div style="display:none;"><canvas id="test"></canvas></div>
 
     <script>
-
+      
       function checkTextureSize() {
         var canvas = document.getElementById("test");
         var gl = canvas.getContext("experimental-webgl");
@@ -47,8 +48,10 @@
           autoLoad: true,
           compass: true,
           northOffset: 247.5,
+          hotSpotDebug: false,
+         
         },
-
+        
         scenes: {
           circle: {
             title: "Mason Circle",
@@ -59,9 +62,23 @@
             panorama:
               "https://i.ibb.co/b1Rpc4J/anime-art-style-desert-orc-city-1.jpg",
             hotSpots: [
+            {
+                pitch: -5,
+                yaw: 74,
+                type: "scene",
+                text: "Spring Sea",
+                sceneId: "house",
+              },
               {
-                pitch: -2.1,
-                yaw: 132.9,
+                pitch: 5,
+                yaw: -14,
+                type: "scene",
+                text: "Lados",
+                sceneId: "house",
+              },
+              {
+                pitch: 8,
+                yaw: 162,
                 type: "scene",
                 text: "Spring House or Dairy",
                 sceneId: "house",

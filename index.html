@@ -15,7 +15,7 @@
   </style>
 
   <audio id="player" autoplay>
-    <source src="song.mp3" type="audio/mpeg">
+    <source id="song" src="song1.mp3" type="audio/mpeg">
   </audio>
 
 </head>
@@ -36,6 +36,7 @@
           autoLoad: true,
           compass: true,
           northOffset: 247.5,
+          autoRotateInactivityDelay: 3e3,
           hotSpotDebug: false,
         },
 
@@ -146,7 +147,6 @@
                 sceneId: "circle",
                 targetYaw: -23,
                 targetPitch: 2,
-                onmouseenter
               },
             ],
           },
@@ -167,9 +167,21 @@
       onmousedown = (event) => { playAudio(x) };
 
 
+      var c = 0;
+      var songs = [ "song2.mp3", "song1.mp3", "song4.mp3", "song5.mp3","song1.mp3"];
+      var a = document.getElementById("player");
+      a.addEventListener('ended', function () {
+        document.getElementById("player").src = songs[c];
+        a.load();
+        console.log(c);
+        c++;
+        if (c >= songs.length) {
+          c = 0;
+        }
+      });
+
+
     </script>
-
-
 
 </body>
 

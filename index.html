@@ -604,6 +604,8 @@
 
 </html>
 <script>
+
+
   var c = 0;
   var songs = ["songs/song2.mp3", "songs/song3.mp3", "songs/song4.mp3", "songs/song5.mp3", "songs/song6.mp3", "songs/song7.mp3", "songs/song8.mp3", "songs/song9.mp3", "songs/song1.mp3"];
   var a = document.getElementById("player");
@@ -617,6 +619,11 @@
       c = 0;
     }
   });
+
+  var val1 = getRandomIndex(scenes);
+  console.log(val1);
+  switchScene(scenes[val1]);
+  
 </script>
 </body>
 

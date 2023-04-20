@@ -387,6 +387,18 @@
   }
 
   // Display the initial scene.
-  switchScene(scenes[0]);
+// program to get a random item from an array
+
+function getRandomIndex(arr) {
+
+  // get random index value
+  const randomIndex = Math.floor(Math.random() * arr.length);
+
+
+  return randomIndex;
+}
+  var val1 = getRandomIndex(scenes);
+  console.log(val1);
+  switchScene(scenes[val1]);
 
 })();

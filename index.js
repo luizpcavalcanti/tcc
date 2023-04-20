@@ -189,6 +189,9 @@
     startAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
+    document.getElementById("player").src = songs[getRandomIndex(songs)];
+     a.play();
+
   }
 
   function updateSceneName(scene) {
@@ -396,9 +399,8 @@ function getRandomIndex(arr) {
   return randomIndex;
 
 }
-
   var val1 = getRandomIndex(scenes);
   console.log(val1);
   switchScene(scenes[val1]);
-
+  
 })();

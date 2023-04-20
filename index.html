@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -618,3 +619,625 @@
   </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mana Istoria</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<audio id="player" autoplay>
+  <source id="song" src="song1.mp3" type="audio/mpeg">
+</audio>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-anime_art_style_armored_frog_paladin-1">
+        <li class="text">anime_art_style_armored_frog_paladin (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-anime_art_style_armored_frog_paladin-4">
+        <li class="text">anime_art_style_armored_frog_paladin (4)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-anime_art_style_armored_frog_paladin-3">
+        <li class="text">anime_art_style_armored_frog_paladin (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-anime_art_style_armored_frog_paladin">
+        <li class="text">anime_art_style_armored_frog_paladin</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-anime_art_style_desert">
+        <li class="text">anime_art_style_desert</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-anime_art_style_barren_wasteland_-_endless_sandy_d-1">
+        <li class="text">anime_art_style_barren_wasteland_-_endless_sandy_d (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-anime_art_style_barren_wasteland_-_endless_sandy_d-4">
+        <li class="text">anime_art_style_barren_wasteland_-_endless_sandy_d (4)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-anime_art_style_barren_wasteland_-_endless_sandy_d-5">
+        <li class="text">anime_art_style_barren_wasteland_-_endless_sandy_d (5)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-anime_art_style_barren_wasteland_-_endless_sandy_d-7">
+        <li class="text">anime_art_style_barren_wasteland_-_endless_sandy_d (7)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-anime_art_style_battle_of_the_dark_elves">
+        <li class="text">anime_art_style_battle_of_the_dark_elves</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-anime_art_style_battle_of_the_dark_forest">
+        <li class="text">anime_art_style_battle_of_the_dark_forest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-anime_art_style_beast-1">
+        <li class="text">anime_art_style_beast (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-anime_art_style_beast-3">
+        <li class="text">anime_art_style_beast (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-anime_art_style_beast">
+        <li class="text">anime_art_style_beast</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-anime_art_style_castle_courtyard_-_massive_stone_w-1">
+        <li class="text">anime_art_style_castle_courtyard_-_massive_stone_w (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-anime_art_style_castle_courtyard_-_massive_stone_w-2">
+        <li class="text">anime_art_style_castle_courtyard_-_massive_stone_w (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-anime_art_style_castle_courtyard_-_massive_stone_w">
+        <li class="text">anime_art_style_castle_courtyard_-_massive_stone_w</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-anime_art_style_dark_elves">
+        <li class="text">anime_art_style_dark_elves</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-anime_art_style_dark_elves_city-1">
+        <li class="text">anime_art_style_dark_elves_city (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-anime_art_style_dark_elves_city-2">
+        <li class="text">anime_art_style_dark_elves_city (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-anime_art_style_dark_elves_city">
+        <li class="text">anime_art_style_dark_elves_city</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-anime_art_style_dark_elves_dungeon">
+        <li class="text">anime_art_style_dark_elves_dungeon</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-anime_art_style_desert_dunes">
+        <li class="text">anime_art_style_desert_dunes</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-anime_art_style_desert_oasis_-_palm_trees_swaying_-1">
+        <li class="text">anime_art_style_desert_oasis_-_palm_trees_swaying_ (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-anime_art_style_desert_oasis_-_palm_trees_swaying_-3">
+        <li class="text">anime_art_style_desert_oasis_-_palm_trees_swaying_ (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-anime_art_style_desert_oasis_-_palm_trees_swaying_">
+        <li class="text">anime_art_style_desert_oasis_-_palm_trees_swaying_</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-anime_art_style_desert_orc_city-1">
+        <li class="text">anime_art_style_desert_orc_city (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-anime_art_style_desert_orc_city-2">
+        <li class="text">anime_art_style_desert_orc_city (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-anime_art_style_desert_orc_city">
+        <li class="text">anime_art_style_desert_orc_city</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-anime_art_style_desert_savana">
+        <li class="text">anime_art_style_desert_savana</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-anime_art_style_desert_savana_beast-1">
+        <li class="text">anime_art_style_desert_savana_beast (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-anime_art_style_desert_savana_beast-2">
+        <li class="text">anime_art_style_desert_savana_beast (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-anime_art_style_desert_savana_beast">
+        <li class="text">anime_art_style_desert_savana_beast</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-anime_art_style_desert_savana_elves-1">
+        <li class="text">anime_art_style_desert_savana_elves (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-anime_art_style_desert_savana_elves-2">
+        <li class="text">anime_art_style_desert_savana_elves (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-anime_art_style_desert_savana_silver_beast">
+        <li class="text">anime_art_style_desert_savana_silver_beast</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-anime_art_style_desert_tribes">
+        <li class="text">anime_art_style_desert_tribes</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-anime_art_style_dragon_nest-1">
+        <li class="text">anime_art_style_dragon_nest (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-anime_art_style_dragon_nest-2">
+        <li class="text">anime_art_style_dragon_nest (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-anime_art_style_dragon_nest">
+        <li class="text">anime_art_style_dragon_nest</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-anime_art_style_dwarven_stronghold_in_a_mountain-1">
+        <li class="text">anime_art_style_dwarven_stronghold_in_a_mountain (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-anime_art_style_dwarven_stronghold_in_a_mountain">
+        <li class="text">anime_art_style_dwarven_stronghold_in_a_mountain</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-anime_art_style_fairy_shinobi-1">
+        <li class="text">anime_art_style_fairy_shinobi (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-anime_art_style_fire_beast">
+        <li class="text">anime_art_style_fire_beast</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-anime_art_style_fire_fields-1">
+        <li class="text">anime_art_style_fire_fields (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-anime_art_style_fire_fields">
+        <li class="text">anime_art_style_fire_fields</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-anime_art_style_fire_fields_house-1">
+        <li class="text">anime_art_style_fire_fields_house (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-anime_art_style_fire_fields_house-2">
+        <li class="text">anime_art_style_fire_fields_house (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-anime_art_style_fire_fields_house">
+        <li class="text">anime_art_style_fire_fields_house</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-anime_art_style_fire_orcs-1">
+        <li class="text">anime_art_style_fire_orcs (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-anime_art_style_fire_orcs">
+        <li class="text">anime_art_style_fire_orcs</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-anime_art_style_fishermen_elves">
+        <li class="text">anime_art_style_fishermen_elves</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-anime_art_style_fishermen_elves_river-1">
+        <li class="text">anime_art_style_fishermen_elves_river (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-anime_art_style_fishermen_elves_river-2">
+        <li class="text">anime_art_style_fishermen_elves_river (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-anime_art_style_fishermen_elves_river">
+        <li class="text">anime_art_style_fishermen_elves_river</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-anime_art_style_forest_beast-1">
+        <li class="text">anime_art_style_forest_beast (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-anime_art_style_forest_beast">
+        <li class="text">anime_art_style_forest_beast</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-anime_art_style_forest_eagle_ninja-1">
+        <li class="text">anime_art_style_forest_eagle_ninja (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-anime_art_style_forest_eagle_ninja">
+        <li class="text">anime_art_style_forest_eagle_ninja</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-anime_art_style_forest_eagles-1">
+        <li class="text">anime_art_style_forest_eagles (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-anime_art_style_forest_eagles-2">
+        <li class="text">anime_art_style_forest_eagles (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-anime_art_style_forest_eagles">
+        <li class="text">anime_art_style_forest_eagles</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-anime_art_style_frozen_river_and_a_dragon">
+        <li class="text">anime_art_style_frozen_river_and_a_dragon</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-anime_art_style_frozen_river_beast">
+        <li class="text">anime_art_style_frozen_river_beast</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-anime_art_style_frozen_river_city-1">
+        <li class="text">anime_art_style_frozen_river_city (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-anime_art_style_frozen_river_city">
+        <li class="text">anime_art_style_frozen_river_city</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-anime_art_style_frozen_river_lords-1">
+        <li class="text">anime_art_style_frozen_river_lords (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-anime_art_style_frozen_river_lords-2">
+        <li class="text">anime_art_style_frozen_river_lords (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-anime_art_style_frozen_river_lords">
+        <li class="text">anime_art_style_frozen_river_lords</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-anime_art_style_frozen_river_with_a_golden_lion_hu-1">
+        <li class="text">anime_art_style_frozen_river_with_a_golden_lion_hu (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-anime_art_style_frozen_river_with_a_golden_lion_hu">
+        <li class="text">anime_art_style_frozen_river_with_a_golden_lion_hu</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-anime_art_style_giant_ancient_armored_turtle-1">
+        <li class="text">anime_art_style_giant_ancient_armored_turtle (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-anime_art_style_giant_ancient_turtle">
+        <li class="text">anime_art_style_giant_ancient_turtle</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-anime_art_style_giant_frog">
+        <li class="text">anime_art_style_giant_frog</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-anime_art_style_giant_plant_turtle-1">
+        <li class="text">anime_art_style_giant_plant_turtle (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-anime_art_style_giant_plant_turtle">
+        <li class="text">anime_art_style_giant_plant_turtle</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-anime_art_style_giant_rabbit-1">
+        <li class="text">anime_art_style_giant_rabbit (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-anime_art_style_giant_rabbit">
+        <li class="text">anime_art_style_giant_rabbit</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-anime_art_style_giant_turtle-1">
+        <li class="text">anime_art_style_giant_turtle (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-anime_art_style_giant_turtle-2">
+        <li class="text">anime_art_style_giant_turtle (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-anime_art_style_giant_turtle-3">
+        <li class="text">anime_art_style_giant_turtle (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-anime_art_style_giant_turtle-4">
+        <li class="text">anime_art_style_giant_turtle (4)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-anime_art_style_giant_turtle-5">
+        <li class="text">anime_art_style_giant_turtle (5)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-anime_art_style_giant_turtle">
+        <li class="text">anime_art_style_giant_turtle</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84-anime_art_style_jungle_fever-1">
+        <li class="text">anime_art_style_jungle_fever (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85-anime_art_style_jungle_monkeys-1">
+        <li class="text">anime_art_style_jungle_monkeys (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86-anime_art_style_jungle_monkeys-2">
+        <li class="text">anime_art_style_jungle_monkeys (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87-anime_art_style_jungle_monkeys">
+        <li class="text">anime_art_style_jungle_monkeys</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88-anime_art_style_jungle_passage-1">
+        <li class="text">anime_art_style_jungle_passage (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89-anime_art_style_jungle_passage-2">
+        <li class="text">anime_art_style_jungle_passage (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90-anime_art_style_jungle_passage">
+        <li class="text">anime_art_style_jungle_passage</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91-anime_art_style_jungle_tomb_of_sorcerer">
+        <li class="text">anime_art_style_jungle_tomb_of_sorcerer</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92-anime_art_style_marvel_dungeon">
+        <li class="text">anime_art_style_marvel_dungeon</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93-anime_art_style_one_piece_dungeon-1">
+        <li class="text">anime_art_style_one_piece_dungeon (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94-anime_art_style_one_piece_dungeon">
+        <li class="text">anime_art_style_one_piece_dungeon</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95-anime_art_style_one_piece_fire_nation">
+        <li class="text">anime_art_style_one_piece_fire_nation</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96-anime_art_style_one_piece_wind_kingdom">
+        <li class="text">anime_art_style_one_piece_wind_kingdom</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97-anime_art_style_rabbit_paladins">
+        <li class="text">anime_art_style_rabbit_paladins</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98-anime_art_style_recife_olinda_brazil_carnaval">
+        <li class="text">anime_art_style_recife_olinda_brazil_carnaval</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99-anime_art_style_river_with_orcs">
+        <li class="text">anime_art_style_river_with_orcs</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100-anime_art_style_rocky_coast_-_waves_crashing_again-1">
+        <li class="text">anime_art_style_rocky_coast_-_waves_crashing_again (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="101-anime_art_style_rocky_coast_-_waves_crashing_again-2">
+        <li class="text">anime_art_style_rocky_coast_-_waves_crashing_again (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="102-anime_art_style_rocky_coast_-_waves_crashing_again-3">
+        <li class="text">anime_art_style_rocky_coast_-_waves_crashing_again (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="103-anime_art_style_rocky_coast_-_waves_crashing_again">
+        <li class="text">anime_art_style_rocky_coast_-_waves_crashing_again</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="104-anime_art_style_rolling_plains_-_golden_grass_sway-1">
+        <li class="text">anime_art_style_rolling_plains_-_golden_grass_sway (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="105-anime_art_style_rolling_plains_-_golden_grass_sway-2">
+        <li class="text">anime_art_style_rolling_plains_-_golden_grass_sway (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="106-anime_art_style_rolling_plains_-_golden_grass_sway-3">
+        <li class="text">anime_art_style_rolling_plains_-_golden_grass_sway (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="107-anime_art_style_rolling_plains_-_golden_grass_sway-4">
+        <li class="text">anime_art_style_rolling_plains_-_golden_grass_sway (4)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="108-anime_art_style_rolling_plains_-_golden_grass_sway-5">
+        <li class="text">anime_art_style_rolling_plains_-_golden_grass_sway (5)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="109-anime_art_style_rolling_plains_-_golden_grass_sway">
+        <li class="text">anime_art_style_rolling_plains_-_golden_grass_sway</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="110-anime_art_style_sand_dunes">
+        <li class="text">anime_art_style_sand_dunes</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="111-anime_art_style_sandworm_desert">
+        <li class="text">anime_art_style_sandworm_desert</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="112-anime_art_style_sea-1">
+        <li class="text">anime_art_style_sea (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="113-anime_art_style_sea-2">
+        <li class="text">anime_art_style_sea (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="114-anime_art_style_sea">
+        <li class="text">anime_art_style_sea</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="115-anime_art_style_sea_dragon-1">
+        <li class="text">anime_art_style_sea_dragon (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="116-anime_art_style_sea_dragon-2">
+        <li class="text">anime_art_style_sea_dragon (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="117-anime_art_style_sea_dragon-3">
+        <li class="text">anime_art_style_sea_dragon (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="118-anime_art_style_sea_dragon">
+        <li class="text">anime_art_style_sea_dragon</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="119-anime_art_style_sea_eyes-1">
+        <li class="text">anime_art_style_sea_eyes (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="120-anime_art_style_sea_eyes-2">
+        <li class="text">anime_art_style_sea_eyes (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="121-anime_art_style_sea_eyes">
+        <li class="text">anime_art_style_sea_eyes</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="122-anime_art_style_sky_kingdom_-_floating_islands_in_-1">
+        <li class="text">anime_art_style_sky_kingdom_-_floating_islands_in_ (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="123-anime_art_style_sky_kingdom_-_floating_islands_in_-2">
+        <li class="text">anime_art_style_sky_kingdom_-_floating_islands_in_ (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="124-anime_art_style_sky_kingdom_-_floating_islands_in_-3">
+        <li class="text">anime_art_style_sky_kingdom_-_floating_islands_in_ (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="125-anime_art_style_sky_kingdom_-_floating_islands_in_-4">
+        <li class="text">anime_art_style_sky_kingdom_-_floating_islands_in_ (4)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="126-anime_art_style_sky_kingdom_-_floating_islands_in_">
+        <li class="text">anime_art_style_sky_kingdom_-_floating_islands_in_</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="127-anime_art_style_sky_people">
+        <li class="text">anime_art_style_sky_people</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="128-anime_art_style_skycity_and_the_golden_dragon-1">
+        <li class="text">anime_art_style_skycity_and_the_golden_dragon (1)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="129-anime_art_style_skycity_and_the_golden_dragon-2">
+        <li class="text">anime_art_style_skycity_and_the_golden_dragon (2)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="130-anime_art_style_skycity_and_the_golden_dragon-3">
+        <li class="text">anime_art_style_skycity_and_the_golden_dragon (3)</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="131-anime_art_style_skycity_and_the_golden_dragon">
+        <li class="text">anime_art_style_skycity_and_the_golden_dragon</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+<script>
+  var x = document.getElementById("player");
+  function playAudio() {
+    x.play();
+  }
+  function pauseAudio() {
+    x.pause();
+  }
+  onmousedown = (event) => { playAudio(x) };
+
+  var c = 0;
+  var songs = [ "song2.mp3", "song3.mp3", "song4.mp3", "song5.mp3","song1.mp3"];
+  var a = document.getElementById("player");
+  a.addEventListener('ended', function () {
+    document.getElementById("player").src = songs[c];
+    a.load();
+    console.log(c);
+    c++;
+    if (c >= songs.length) {
+      c = 0;
+    }
+  });
+  </script>
+</body>
+</html>
+>>>>>>> 500986e2bae6fc024c74307a827fa951639be2ea

@@ -593,29 +593,6 @@
 
 <script src="data.js"></script>
 <script src="index.js"></script>
-<script>
-  var x = document.getElementById("player");
-  function playAudio() {
-    x.play();
-  }
-  function pauseAudio() {
-    x.pause();
-  }
-  onmousedown = (event) => { playAudio(x) };
-
-  var c = 0;
-  var songs = [ "songs\song2.mp3", "songs\song3.mp3", "songs\song4.mp3", "songs\song2.mp5","songs\song1.mp3"];
-  var a = document.getElementById("player");
-  a.addEventListener('ended', function () {
-    document.getElementById("player").src = songs[c];
-    a.load();
-    console.log(c);
-    c++;
-    if (c >= songs.length) {
-      c = 0;
-    }
-  });
-  </script>
 </body>
 </html>
 <script>

@@ -476,6 +476,8 @@
     const randomIndex = Math.floor(Math.random() * arr.length);
     return randomIndex;
   }
+  
+  // Random index value to random change scene (and song inside the switchScene function)
 
   var val1 = getRandomIndex(scenes);
   console.log(val1);

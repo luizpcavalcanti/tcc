@@ -618,7 +618,7 @@
   var a = document.getElementById("player");
   a.addEventListener('ended', function () {
     document.getElementById("player").src = songs[c];
-    a.load();
+    a.play();
     console.log(c);
     c++;
     if (c >= songs.length) {

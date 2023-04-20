@@ -11,8 +11,8 @@
       width: device-width;
     }
   </style>
-  <audio id="player">
-    <source id="player" src="songs\song1.mp3" type="audio/mpeg">
+  <audio>
+    <source id="player" src="songs/song1.mp3" type="audio/mpeg">
   </audio>
   <link rel="stylesheet" href="vendor/reset.min.css">
   <link rel="stylesheet" href="style.css">
@@ -614,7 +614,7 @@
   onmousedown = (event) => { playAudio(x) };
 
   var c = 0;
-  var songs = ["songs\song2.mp3", "songs\song3.mp3", "songs\song4.mp3", "songs\song2.mp5", "songs\song1.mp3"];
+  var songs = ["songs/song2.mp3", "songs/song3.mp3", "songs/song4.mp3", "songs/song2.mp5", "songs/song1.mp3"];
   var a = document.getElementById("player");
   a.addEventListener('ended', function () {
     document.getElementById("player").src = songs[c];
